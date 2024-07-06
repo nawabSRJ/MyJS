@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Storing Complex Data</title>
+</head>
+
+<body>
+  <input type="text" id="user-name" placeholder="enter name"><br><br>
+  <input type="email" id="user-email" placeholder="enter email"><br><br>
+  <button style="padding: 10px;" onclick="setUserData()">
+    Set User Data
+  </button><br><br>
+  <button id="showBtn" style="padding: 10px;" onclick="showUserData()">
+    Show User Data
+  </button>
+  </button><br><br>
+  <button style="padding: 10px;" onclick="deleteUserData()">
+    Delete User Data
+  </button>
+</body>
+
+<script>
+  function setUserData() {
+    var name = document.querySelector('#user-name').value; // Get name
+    var email = document.querySelector('#user-email').value; // Get email (corrected typo)
+
+    const userObj = {
+      userName: name,
+      email: email 
+    };
+
+    localStorage.setItem('user', JSON.stringify(userObj)); // Store as JSON string
+  }
+
+  function showUserData() {
+    const storedData = localStorage.getItem('user');
+
+    if (storedData) {
+      const userObj = JSON.parse(storedData); // Parse back to object
+      alert(`User Data:\nName: ${userObj.userName}\nEmail: ${userObj.email}`); // Improved alert message
+    } else {
+      alert('No user data found in local storage.');
+    }
+  }
+
+  function deleteUserData(){
+    check = localStorage.getItem('user')
+    if(check){
+        // delete it
+        localStorage.removeItem('user');
+        alert('Data deleted')
+    }else{
+        alert('User Data does not exist')
+    }
+  }
+//   In the example above, we first check if there is data for ‘user’ in local storage before using the JSON.parse() method. This is important because if it does not exist in local storage, JSON.parse() will be applied to a null value (which will result in an error).
+</script>
+
+</html>

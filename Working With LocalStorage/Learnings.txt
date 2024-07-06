@@ -1,0 +1,22 @@
+source : https://www.freecodecamp.org/news/use-local-storage-in-modern-applications/
+(also has codes and matter about session storage)
+
+
+Local storage is a feature in web browsers that allows developers to save data in the user’s browser. It’s part of the web storage API, together with session storage.
+
+Local storage works by accepting data in key-value pairs. It retains the data even when the user refreshes the page or closes the tab or browser.
+
+# Differences Between Local Storage and Session Storage
+The key differences between the two are the lifespan of the stored data and their scope.
+
+Data in local storage remains available even when the tab/browser is closed. But closing the tab/browser clears any data stored in session storage.
+
+Also, data in local storage is accessible across multiple browser tabs and windows. On the other hand, data in session storage is only accessible within specific browser tabs and is not shared.
+
+# How to Delete Data from Local Storage
+There are two methods available for deleting data from local storage. One is the removeItem() method and the other is the clear() method.
+
+You use the removeItem() method when you want to delete a single item from local storage. The method takes in a key as an argument and deletes the corresponding key-value pair from local storage.
+
+localStorage.removeItem(key)
+But what if, instead of deleting a single key-value pair, you want to clear all data from the local storage? Well, local storage has a method for that - the clear() method.
