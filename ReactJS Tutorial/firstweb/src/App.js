@@ -31,6 +31,8 @@ function App() {
   function displayAlert2(){
     alert('Heya!! , from normal function')
   }
+  let [box_state , setBoxState] = useState(false);
+  let [pstate , setPState] = useState(false);
   return (
     <div className="App">
       <h1 className='text-3xl text-sky-500 font-semibold'>Namastey World</h1>
@@ -43,6 +45,26 @@ function App() {
         useState() demo : 
       <p className='block text-2xl'> Counter : {count} </p>
       {template}
+      <br/><br/>
+
+    <button className='bg-green-400' onClick={() => setBoxState(!box_state)}>
+      {(box_state) ? 'Ternary Hide' : 'Ternary Show'}
+      </button>
+
+      {
+      (box_state) 
+      ?
+      <p className='bg-red-400 p-5 text-white'>Hello , I am visible</p>
+      :
+      ''
+      }
+      <hr/><br/>
+      <h2>Password Show & Hide</h2>
+      <button onClick={()=>setPState(!pstate)} className='bg-red-400 p-5 text-white'>
+        {(pstate) ? 'Hide Password' : 'Show Password'}
+      </button>
+      <input type={(pstate) ? 'text' : 'password'} placeholder='Enter Password here'/>
+
       </div>
     </div>
   );
