@@ -5,10 +5,10 @@ export const tabsData = [
     },
     {
         id:2,
-        content:"Content 2",
+        content:"Hello there this is the data for Tab 2 and hence we will call it Content 2!!",
     },
     {
         id:3,
-        content:"Content 3",
+        content:"Heya , how are you this is the content of Tab 3 and hence we should call it the Content 3!!",
     },
 ]
