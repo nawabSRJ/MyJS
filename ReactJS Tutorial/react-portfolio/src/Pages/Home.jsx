@@ -37,7 +37,9 @@ export default function Home() {
         </div>
       </div>
       <br />
+
       <div className='h-[4px] w-[100%] bg-green-700'></div>
+      
       <div className='bg-white'>
         <div className="about h-4/5 z-2 w-[70%] mx-auto flex flex-col items-center justify-center bg-white">
           <h3 className="sm:text-3xl text-2xl text-center my-4">🕵️‍♀️ About Me</h3>
