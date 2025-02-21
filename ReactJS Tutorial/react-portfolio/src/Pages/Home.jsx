@@ -41,27 +41,7 @@ export default function Home() {
       <div className='h-[4px] w-[100%] bg-green-700'></div>
       
       <div className='bg-white'>
-        <div className="about h-4/5 z-2 w-[70%] mx-auto flex flex-col items-center justify-center bg-white">
-          <h3 className="sm:text-3xl text-2xl text-center my-4">🕵️‍♀️ About Me</h3>
-          <div className="container flex flex-col sm:flex-row items-center justify-center p-10 gap-10">
-            <div className="abt-left flex-grow flex justify-center sm:justify-end sm:mr-4 w-full sm:w-2/5">
-              <div className="text-center sm:text-left">
-                <h1 className="mb-3 text-2xl"><b>I'm Srajan</b></h1>
-                <p className='leading-10 mb-3'>
-                  I am a student of BCA 3rd year at National Post Graduate College, Lucknow. I am passionate about coding and startups. I am very passionate about improving my coding skills & developing applications & websites. I build WebApps and Websites using MERN Stack. Working for myself to improve my skills. Love to solve problems using my tech knowledge. <br />
-                </p>
-                <p>
-                  <span className='text-blue-600 '>Email :</span> srajan.saxena7@gmail.com
-                  <br /><br />
-                  <span className='text-blue-600 '>Place :</span> Lucknow, Uttar Pradesh
-                </p>
-              </div>
-            </div>
-            <div className="abt-right flex-grow flex justify-center sm:justify-start sm:ml-4 w-full sm:w-1/5">
-              <img src={mypic} className="rounded-md h-[420px] shadow-lg transition-shadow duration-300 hover:shadow-xl" />
-            </div>
-          </div>
-        </div>
+        
       </div>    {/* end of about page */}
       
       <div className='bg-blue-400'>
