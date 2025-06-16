@@ -2,7 +2,7 @@
 
 // ! we can only do this if we use Template String i.e back-tics to create strings
 var fname = "Srajan"
-var age = 19
+var age = 20
 var sent = `We know that ${fname} is a good boy , his age is ${age}`
 console.log(sent)
 

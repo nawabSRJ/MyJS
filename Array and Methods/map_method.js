@@ -12,7 +12,7 @@ const users = [
     {first : "John" , second : "Doe"},
     {first:"Srajan" , second:"Saxena"}
 ]
-
+                                    // without {}, it means direct return 
 const full = users.map((user , place) => `${user.first} ${user.second} at index ${place}`) // place parameter is index (refer syntax above)
 console.log(full)
 

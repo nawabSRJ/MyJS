@@ -11,7 +11,7 @@ var nums = [10 , 20 , 32 , 92]
 var hybrid = ["Srajan" , 19 , "Male" , 19]
 
 
-console.log(strs.concat(nums))
+console.log('Here is the concat of strs and nums : ',strs.concat(nums))
 
 
 console.log("Index of 20 " , nums.indexOf(20))

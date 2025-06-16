@@ -8,5 +8,13 @@ const isEven = (num) =>{
 
 isEven(7)
 
+const isOdd = (num)=>{
+    num % 2 === 0 ? console.log("Not Odd") : console.log("Yes, Odd")
+}
+
+isOdd(5)
+
+
+
 // ! Implementation of 'this' keyword in arrow function is different from other functions
 

@@ -4,7 +4,7 @@
 function greet1(){
     console.log("hello")
 }
-// func. expression
+// func. expression or anonymous function ~ function does have a name, it is just assigned to a variable
 const greet2 = function(){
     console.log("hello")
 }
