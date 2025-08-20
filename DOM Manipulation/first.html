@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript DOM Fun Examples</title>
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+    .highlighter{
+        font-weight: bold;
+        background-color: yellow;
+        color: black;
+    }
+    .container {
+      max-width: 500px;
+    }
+    button {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>JavaScript DOM Fun Examples</h1>
+
+    <h3>Accessing DOM Elements</h3>
+    <p id="para1">This is a paragraph. Click the button to change me!</p>
+    <button id="changeTextBtn">Change Text</button>
+
+    <h3>Traversing the DOM</h3>
+    <ul id="cityList">
+      <li>1. New York</li>
+      <li>2. Tokyo</li>
+      <li>3. Paris</li>
+      <li>4. London</li>
+      <li>5. Lucknow</li>
+      <li>6. Mumbai</li>
+    </ul>
+    <button id="highlightBtn">Highlight First City</button><br>
+    Highlight <input id="cityHighlighterInput" type="text" value="" size="5">th City <button id="highlightNthBtn">Go</button> <br>
+    <button id="evenCityBtn">Highlight Even City</button>
+
+    <h3>Manipulating DOM Elements</h3>
+    <p id="order">Order: Latte</p>
+    <button id="changeOrderBtn">Change Order to Espresso</button>
+
+    <h3>Creating and Inserting Elements</h3>
+    <button id="addItemBtn">Add a New Item to the Shopping List</button>
+    <ul id="shoppingList">
+      <li>Bread</li>
+      <li>Milk</li>
+    </ul>
+
+    <h3>Removing DOM Elements</h3>
+    <ul id="taskList">
+      <li>Task 1</li>
+      <li>Task 2</li>
+      <li>Task 3</li>
+      <li>Task 4</li>
+      <li>Task 5</li>
+    </ul>
+    <button id="removeTaskBtn">Remove Last Task</button><br>
+    Remove <input id="removeTaskInput" type="text" value="" size="5">th Task <button id="removeNthBtn">Remove</button> <br>
+
+  </div>
+</body>
+<script src="firstScript.js"></script>
+</html>

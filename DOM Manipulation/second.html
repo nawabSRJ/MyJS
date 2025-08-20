@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Target in DOM</title>
+    <style>
+      body {
+        background-color: #111;
+        color: white;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        text-align: center;
+      }
+      .highlighter {
+        font-weight: bold;
+        background-color: yellow;
+        color: black;
+      }
+      .container {
+        max-width: 500px;
+      }
+      button {
+        margin: 10px;
+      }
+      #teaList li {
+        padding: 10px;
+        margin: 5px;
+        background-color: #333;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+      }
+
+      #teaList li:hover {
+        background-color: #444;
+      }
+
+      .tooltip {
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fff;
+        color: #111;
+        padding: 5px 10px;
+        border-radius: 4px;
+        font-size: 14px;
+        white-space: nowrap;
+        display: none;
+      }
+
+      #teaList li:hover .tooltip {
+        display: block;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <!-- todo : On the hover of mouse show the tea -->
+    <ul id="teaList">
+      <li>Green Tea</li>
+      <li>Black Tea</li>
+      <li>Cutting Chai</li>
+      <li>Masala Chai</li>
+    </ul>
+
+
+    <!-- todo : Form handling -->
+     <section id="formDom">
+      <h2>Form Handling</h2>
+      <form id="feedbackForm" action="">
+        <label for="">Your Feedback : </label>
+        <input type="text" id="feedbackInput" placeholder="enter feedback">
+        <button type="submit" id="submitBtn">Submit Feedback</button>
+      </form>
+      <p id="feedbackDisplay"></p>
+     </section>
+  </body>
+  <script src="secondScript.js"></script>
+</html>

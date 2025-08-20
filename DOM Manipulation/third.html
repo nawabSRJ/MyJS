@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New DOM Concepts</title>
+    <style>
+      .originalDiv {
+        border: 2px solid black;
+        padding: 10px;
+        margin: 10px;
+        width: 20%;
+      }
+      .torch-box {
+        position: relative;
+        width: 300px;
+        height: 180px;
+        background-color: black;
+        border: 2px solid #444;
+        overflow: hidden;
+      }
+
+      /* This overlay is hidden until 'torch-on' is toggled */
+      .torch-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: none;
+      }
+
+      .torch-on .torch-overlay {
+        display: block;
+        background: linear-gradient(
+              to bottom left,
+              rgba(255, 255, 255, 0.3),
+              transparent 70%
+            )
+            top left,
+          linear-gradient(to bottom, rgba(255, 255, 255, 0.3), transparent 70%)
+            top center,
+          linear-gradient(
+              to bottom right,
+              rgba(255, 255, 255, 0.3),
+              transparent 70%
+            )
+            top right;
+        background-repeat: no-repeat;
+        background-size: 33% 100%, 34% 100%, 33% 100%;
+      }
+    </style>
+  </head>
+  <!-- todo : this file contains some different medium level DOM concepts -->
+  <body>
+    <!-- <button>No i am the first button</button> -->
+    <div class="querySelector">
+      <h2>Query Selector and Query Selector All</h2>
+      <div class="specialDiv">
+        <p>This div contains some special content</p>
+        <p>We are here to learn DOM Manipulation</p>
+        <li>Inside Query Selector Div</li>
+      </div>
+      <br />
+      <button>First Button</button>
+      <button>Second Button</button>
+      <button>Third Button</button>
+    </div>
+    <br />
+    <li>Outside Query Selector Div</li>
+    <br /><br />
+    <!--  * Creating Elements : append & prepend (Dynamic) -->
+    <!-- all from the js -->
+    <ul>
+      <li>List Item 1</li>
+      <li>List Item 2</li>
+    </ul>
+
+    <div class="oldDiv">
+      <p>Hi there, this is old div</p>
+    </div>
+    <button id="changeOldDiv">Change Div</button>
+    <button id="removeOldDiv">Remove Div</button>
+    <br /><br />
+    <!-- Cloning DOM Elements -->
+    <div class="originalDiv">
+      <p>This is the Original Div</p>
+      <p>Second Para in Original Div</p>
+    </div>
+    <button id="deepCopyBtn">Make a Deep Copy</button>
+    <button id="shallowCopyBtn">Make a Shallow Copy</button>
+
+    <!-- toggle classes -->
+    <div class="torch-box" id="torchBox">
+      <div class="torch-overlay"></div>
+    </div>
+    <button id="toggleTorchBtn">Toggle Torch</button>
+  </body>
+  <script src="thirdScript.js"></script>
+</html>
