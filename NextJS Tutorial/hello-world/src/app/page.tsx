@@ -43,6 +43,50 @@ export default function Page() {
           </li>
         </ol>
       </ul>
+      <h2>Route Groups</h2>
+      <ul>
+        <li>
+          Route groups are a way to group routes together without affecting the
+          url structure.
+        </li>
+        <li>
+          Normally, in Next.js App Router The folder name = the route path,
+          example: app/dashboard/page.js → /dashboard
+        </li>
+        <li>
+          But sometimes, you want folders only for organization, not to show up
+          in the URL.That is where route groups help.
+        </li>
+        <li>Like you would not want to create separate folders for register, login and forgot-password, all of them come under the functionality of auth.
+        So you can create an 'Auth' folder and then put those 3 folders inside of it.
+        But then the routes will become - auth/login, auth/register and so on...
+        This might look right for auth but not necessarily for everything, thus we use route groups.
+        </li>
+        <li>
+          To make a folder as a route group just add parenthesis in the folder name. So naming auth folder as - (auth) will make the sub-folders inside of it the routes and not it since it is considered just for grouping logically. So now the routes will be - /register, /login, /forgot-password 
+        </li>
+      </ul>
+      <h2>Layouts</h2>
+      <ul>
+        <li>
+            pages are route specific UI components
+        </li>
+        <li>
+            A layout is UI that is shared between multiple pages in our app
+        </li>
+        <li>
+          Nested Layout also explained in the layout.tsx file inside of the [productId] folder.
+        </li>
+      </ul>
+      <h2>Metadata</h2>
+      <ul>
+        <li>You cannot use both static and dynamic metadata component in the same file(or route segment), its only either one of them</li>
+        <li>
+          Metadata will not work in the pages that are marked with 'use client' directive
+        </li>
+      </ul>
+      <p>-------------------------------------------------------------- END OF DEMO --------------------------------------------------------------</p>
     </div>
   );
 }
+

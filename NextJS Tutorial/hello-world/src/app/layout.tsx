@@ -10,7 +10,24 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <header style={{backgroundColor:'lightblue', padding:'1rem'}}>
+          <p>This is the header</p>
+        </header>
+
+        {children}
+
+        <footer style={{backgroundColor:'tomato', padding:'1rem'}}>
+          <p>This is the footer</p>
+        </footer>
+        </body>
     </html>
   )
 }
+// * Notes 
+
+// Every layout component needs a children where the page content will go, so in this case the page.tsx at this level of hierarchy becomes the children when layout.tsx renders
+
+// without layout.tsx the page.tsx cannot render, and thus even if we try to delete this layout.tsx and then refresh the page then it will automatically re-appear, so this layout.tsx is NOT optional
+
+// So keep the children prop and the write html,css around it, if you do this then you will be able to see the same layout on every route but the children prop will render different unique content based on the route
