@@ -84,6 +84,8 @@ export default function Page() {
         <li>
           Metadata will not work in the pages that are marked with 'use client' directive
         </li>
+        <li>Both static and dynamic metadata are shown in this project code</li>
+        <li><b>Title Metadata</b> : it's purpose is to define the document title. It can either be a string or a dynamic object. (already dynamic metadata demo covered on it) in reviews</li>
       </ul>
       <p>-------------------------------------------------------------- END OF DEMO --------------------------------------------------------------</p>
     </div>

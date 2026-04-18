@@ -1,0 +1,1 @@
+Client components do NOT support async-await

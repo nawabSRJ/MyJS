@@ -6,6 +6,11 @@ Not found page	       |
 File colocation	       |	
 Private folders        |
 Route Groups           |
-Layouts                | hello-world
+Layouts                | 
+Routing Metadata       | 
+Title metadata	       | hello-world
 
+multiple root layouts  | layout-demo
 
+Linking Component
+Navigation	       | navigation-demo

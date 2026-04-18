@@ -1,6 +1,8 @@
 // ! This is static metadata
 export const metadata = {
-    title:'About SRJ'
+    title:{
+        absolute:'About SRJ' // using the absolute title metadata property 
+    }
 }
 
 

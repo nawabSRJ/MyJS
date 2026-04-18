@@ -1,0 +1,5 @@
+Important packages to install for OAuth:
+FRONTEND:
+    - npm i @react-oauth/google axios react-router-dom
+BACKEND:
+    - 
