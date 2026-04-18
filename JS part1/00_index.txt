@@ -1,0 +1,22 @@
+1- console statement
+2- variables
+3- variables rules
+4- let,var,const
+5- const
+6- length function and accessing array elements with index
+7- trim(), toUpperCase(), toLowerCase(), slice()
+8- typeof operator 
+9- string concatenation
+10- template string
+11- undefined and null
+12- booleans & comparison operator, 12_Info : Notes on the topic
+13- truthy and falsy values
+14- if else condition
+15- ternary operator
+16- and  or operator
+17 to 20- if else, nested if else, switch
+21- while loop
+22,23- for loop
+24- break and continue statement
+25- do while loop
+26- intro to arrays, reference types, how to create arrays
